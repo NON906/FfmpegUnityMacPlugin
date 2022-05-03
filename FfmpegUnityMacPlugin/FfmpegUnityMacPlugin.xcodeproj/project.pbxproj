@@ -1,0 +1,378 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CD563FB8281E2909001EC523 /* ffmpegkit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDFAF91C281BAC9500C21909 /* ffmpegkit.framework */; };
+		CD563FB9281E2909001EC523 /* ffmpegkit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CDFAF91C281BAC9500C21909 /* ffmpegkit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CD563FBA281E2909001EC523 /* libavcodec.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDFAF91E281BAC9C00C21909 /* libavcodec.framework */; };
+		CD563FBB281E2909001EC523 /* libavcodec.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CDFAF91E281BAC9C00C21909 /* libavcodec.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CD563FBC281E2909001EC523 /* libavdevice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDFAF920281BACA100C21909 /* libavdevice.framework */; };
+		CD563FBD281E2909001EC523 /* libavdevice.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CDFAF920281BACA100C21909 /* libavdevice.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CD563FBE281E2909001EC523 /* libavfilter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDFAF922281BACA500C21909 /* libavfilter.framework */; };
+		CD563FBF281E2909001EC523 /* libavfilter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CDFAF922281BACA500C21909 /* libavfilter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CD563FC0281E2909001EC523 /* libavformat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDFAF924281BACA900C21909 /* libavformat.framework */; };
+		CD563FC1281E2909001EC523 /* libavformat.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CDFAF924281BACA900C21909 /* libavformat.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CD563FC2281E2909001EC523 /* libavutil.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDFAF926281BACAE00C21909 /* libavutil.framework */; };
+		CD563FC3281E2909001EC523 /* libavutil.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CDFAF926281BACAE00C21909 /* libavutil.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CD563FC4281E2909001EC523 /* libswresample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDFAF928281BACB200C21909 /* libswresample.framework */; };
+		CD563FC5281E2909001EC523 /* libswresample.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CDFAF928281BACB200C21909 /* libswresample.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CD563FC6281E2909001EC523 /* libswscale.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDFAF92A281BACB700C21909 /* libswscale.framework */; };
+		CD563FC7281E2909001EC523 /* libswscale.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CDFAF92A281BACB700C21909 /* libswscale.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CDFAF88F281B911000C21909 /* FFmpegKit.mm in Sources */ = {isa = PBXBuildFile; fileRef = CDFAF88E281B910F00C21909 /* FFmpegKit.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CD563FC8281E2909001EC523 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CD563FBB281E2909001EC523 /* libavcodec.framework in Embed Frameworks */,
+				CD563FC7281E2909001EC523 /* libswscale.framework in Embed Frameworks */,
+				CD563FC1281E2909001EC523 /* libavformat.framework in Embed Frameworks */,
+				CD563FBF281E2909001EC523 /* libavfilter.framework in Embed Frameworks */,
+				CD563FBD281E2909001EC523 /* libavdevice.framework in Embed Frameworks */,
+				CD563FC5281E2909001EC523 /* libswresample.framework in Embed Frameworks */,
+				CD563FB9281E2909001EC523 /* ffmpegkit.framework in Embed Frameworks */,
+				CD563FC3281E2909001EC523 /* libavutil.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		CDFAF86D281B907F00C21909 /* FfmpegUnityMacPlugin.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FfmpegUnityMacPlugin.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDFAF88E281B910F00C21909 /* FFmpegKit.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FFmpegKit.mm; sourceTree = "<group>"; };
+		CDFAF91C281BAC9500C21909 /* ffmpegkit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ffmpegkit.framework; sourceTree = "<group>"; };
+		CDFAF91E281BAC9C00C21909 /* libavcodec.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libavcodec.framework; sourceTree = "<group>"; };
+		CDFAF920281BACA100C21909 /* libavdevice.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libavdevice.framework; sourceTree = "<group>"; };
+		CDFAF922281BACA500C21909 /* libavfilter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libavfilter.framework; sourceTree = "<group>"; };
+		CDFAF924281BACA900C21909 /* libavformat.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libavformat.framework; sourceTree = "<group>"; };
+		CDFAF926281BACAE00C21909 /* libavutil.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libavutil.framework; sourceTree = "<group>"; };
+		CDFAF928281BACB200C21909 /* libswresample.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libswresample.framework; sourceTree = "<group>"; };
+		CDFAF92A281BACB700C21909 /* libswscale.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libswscale.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CDFAF86A281B907F00C21909 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD563FC0281E2909001EC523 /* libavformat.framework in Frameworks */,
+				CD563FC6281E2909001EC523 /* libswscale.framework in Frameworks */,
+				CD563FB8281E2909001EC523 /* ffmpegkit.framework in Frameworks */,
+				CD563FC2281E2909001EC523 /* libavutil.framework in Frameworks */,
+				CD563FBA281E2909001EC523 /* libavcodec.framework in Frameworks */,
+				CD563FC4281E2909001EC523 /* libswresample.framework in Frameworks */,
+				CD563FBE281E2909001EC523 /* libavfilter.framework in Frameworks */,
+				CD563FBC281E2909001EC523 /* libavdevice.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CDFAF864281B907F00C21909 = {
+			isa = PBXGroup;
+			children = (
+				CDFAF88E281B910F00C21909 /* FFmpegKit.mm */,
+				CDFAF86E281B907F00C21909 /* Products */,
+				CDFAF874281B90BE00C21909 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CDFAF86E281B907F00C21909 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CDFAF86D281B907F00C21909 /* FfmpegUnityMacPlugin.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CDFAF874281B90BE00C21909 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CDFAF92A281BACB700C21909 /* libswscale.framework */,
+				CDFAF928281BACB200C21909 /* libswresample.framework */,
+				CDFAF926281BACAE00C21909 /* libavutil.framework */,
+				CDFAF924281BACA900C21909 /* libavformat.framework */,
+				CDFAF922281BACA500C21909 /* libavfilter.framework */,
+				CDFAF920281BACA100C21909 /* libavdevice.framework */,
+				CDFAF91E281BAC9C00C21909 /* libavcodec.framework */,
+				CDFAF91C281BAC9500C21909 /* ffmpegkit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CDFAF86C281B907F00C21909 /* FfmpegUnityMacPlugin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CDFAF871281B907F00C21909 /* Build configuration list for PBXNativeTarget "FfmpegUnityMacPlugin" */;
+			buildPhases = (
+				CDFAF869281B907F00C21909 /* Sources */,
+				CDFAF86A281B907F00C21909 /* Frameworks */,
+				CDFAF86B281B907F00C21909 /* Resources */,
+				CD563FC8281E2909001EC523 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FfmpegUnityMacPlugin;
+			productName = FfmpegUnityMacPlugin;
+			productReference = CDFAF86D281B907F00C21909 /* FfmpegUnityMacPlugin.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CDFAF865281B907F00C21909 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					CDFAF86C281B907F00C21909 = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+				};
+			};
+			buildConfigurationList = CDFAF868281B907F00C21909 /* Build configuration list for PBXProject "FfmpegUnityMacPlugin" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CDFAF864281B907F00C21909;
+			productRefGroup = CDFAF86E281B907F00C21909 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CDFAF86C281B907F00C21909 /* FfmpegUnityMacPlugin */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CDFAF86B281B907F00C21909 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CDFAF869281B907F00C21909 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDFAF88F281B911000C21909 /* FFmpegKit.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		CDFAF86F281B907F00C21909 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		CDFAF870281B907F00C21909 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		CDFAF872281B907F00C21909 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSPrincipalClass = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-rpath",
+					"@loader_path/../Frameworks/",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = online.mumeigames.FfmpegUnityMacPlugin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		CDFAF873281B907F00C21909 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSPrincipalClass = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-rpath",
+					"@loader_path/../Frameworks/",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = online.mumeigames.FfmpegUnityMacPlugin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CDFAF868281B907F00C21909 /* Build configuration list for PBXProject "FfmpegUnityMacPlugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDFAF86F281B907F00C21909 /* Debug */,
+				CDFAF870281B907F00C21909 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CDFAF871281B907F00C21909 /* Build configuration list for PBXNativeTarget "FfmpegUnityMacPlugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDFAF872281B907F00C21909 /* Debug */,
+				CDFAF873281B907F00C21909 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CDFAF865281B907F00C21909 /* Project object */;
+}
