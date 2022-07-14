@@ -3,6 +3,9 @@
 #import <ffmpegkit/FFmpegKitConfig.h>
 #import <ffmpegkit/FFprobeKit.h>
 #import <ffmpegkit/Session.h>
+#import <ffmpegkit/FFmpegSession.h>
+#import <ffmpegkit/Statistics.h>
+#import <ffmpegkit/ReturnCode.h>
 
 static NSMutableSet* runningSessions = [NSMutableSet set];
 
@@ -71,5 +74,32 @@ extern "C"
     void ffmpeg_closePipe(const char* pipeName)
     {
         [FFmpegKitConfig closeFFmpegPipe:@(pipeName)];
+    }
+
+    float ffmpeg_getTime(void* session)
+    {
+        Statistics* statistics = [(__bridge FFmpegSession*)session getLastReceivedStatistics];
+        float fps = [statistics getVideoFps];
+        if (fps <= 0.0f)
+        {
+            return 0.0f;
+        }
+        return [statistics getVideoFrameNumber] / fps;
+    }
+
+    double ffmpeg_getSpeed(void* session)
+    {
+        Statistics* statistics = [(__bridge FFmpegSession*)session getLastReceivedStatistics];
+        return [statistics getSpeed];
+    }
+
+    int ffmpeg_getReturnCode(void* session)
+    {
+        ReturnCode* returnCode = [(__bridge id<Session>)session getReturnCode];
+        if (returnCode == NULL)
+        {
+            return 0;
+        }
+        return [returnCode getValue];
     }
 }
