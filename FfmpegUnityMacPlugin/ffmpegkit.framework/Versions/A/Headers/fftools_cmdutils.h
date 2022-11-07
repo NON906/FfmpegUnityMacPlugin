@@ -84,9 +84,9 @@ extern __thread char *program_name;
  */
 extern __thread int program_birth_year;
 
-extern __thread AVDictionary *sws_dict;
-extern __thread AVDictionary *swr_opts;
-extern __thread AVDictionary *format_opts, *codec_opts;
+extern /*__thread*/ AVDictionary *sws_dict;
+extern /*__thread*/ AVDictionary *swr_opts;
+extern /*__thread*/ AVDictionary *format_opts, *codec_opts;
 extern __thread int hide_banner;
 extern __thread int find_stream_info;
 
