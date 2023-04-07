@@ -80,11 +80,11 @@ extern "C"
     {
         Statistics* statistics = [(__bridge FFmpegSession*)session getLastReceivedStatistics];
         float fps = [statistics getVideoFps];
-        if (fps <= 0.0f)
+        if (fps > 0.0f)
         {
-            return 0.0f;
+            return [statistics getVideoFrameNumber] / fps;
         }
-        return [statistics getVideoFrameNumber] / fps;
+        return [statistics getTime] / 1000.0f;
     }
 
     double ffmpeg_getSpeed(void* session)
