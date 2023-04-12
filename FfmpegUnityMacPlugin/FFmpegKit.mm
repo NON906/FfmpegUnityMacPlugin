@@ -102,9 +102,4 @@ extern "C"
         }
         return [returnCode getValue];
     }
-
-    long ffmpeg_getSessionId(void* session)
-    {
-        return [(__bridge id<Session>)session getSessionId];
-    }
 }
